@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Analaysic of website{% endblock title %}
+
+{% block body %}
+
+<h5>{{value1}}</h5>
+<h5>{{value2}}</h5>
+<h5>{{value3}}</h5>
+<h5>{{value4}}</h5>
+<h5>{{value5}}</h5>
+<h5>{{value6}}</h5>
+<div class="container col-lg-4 my-2">
+    <h3>Result</h3>
+    <table class="table table-dark text-center">
+      <thead>
+        <tr>
+          <th scope="col">Accuracy</th>
+          <th scope="col">Confusion matrix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ s2 }}</td>
+          <td>{{ s3 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+{% endblock body%}
+
